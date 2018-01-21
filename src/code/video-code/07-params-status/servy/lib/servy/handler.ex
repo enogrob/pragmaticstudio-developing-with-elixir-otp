@@ -1,9 +1,9 @@
 defmodule Servy.Handler do
   def handle(request) do
-    request 
+    request
     |> parse
-    |> log 
-    |> route 
+    |> log
+    |> route
     |> format_response
   end
 
@@ -11,13 +11,13 @@ defmodule Servy.Handler do
 
   def parse(request) do
     [method, path, _] =
-      request 
-      |> String.split("\n") 
-      |> List.first    
+      request
+      |> String.split("\n")
+      |> List.first
       |> String.split(" ")
 
-    %{ method: method, 
-       path: path, 
+    %{ method: method,
+       path: path,
        resp_body: "",
        status: nil
      }
@@ -28,15 +28,19 @@ defmodule Servy.Handler do
   end
 
   def route(conv, "GET", "/wildthings") do
-    %{ conv | status: 200, resp_body: "Bears, Lions, Tigers" }          
+    %{ conv | status: 200, resp_body: "Bears, Lions, Tigers" }
   end
 
   def route(conv, "GET", "/bears") do
-    %{ conv | status: 200, resp_body: "Teddy, Smokey, Paddington" }    
+    %{ conv | status: 200, resp_body: "Teddy, Smokey, Paddington" }
   end
 
   def route(conv, "GET", "/bears/" <> id) do
     %{ conv | status: 200, resp_body: "Bear #{id}" }
+  end
+
+  def route(conv, "DELETE", "/bears/" <> id) do
+    %{ conv | status: 403, resp_body: "Deleting a bear is Forbidden!" }
   end
 
   def route(conv, _method, path) do
@@ -113,4 +117,3 @@ Accept: */*
 response = Servy.Handler.handle(request)
 
 IO.puts response
-
