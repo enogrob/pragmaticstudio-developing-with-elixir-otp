@@ -17,7 +17,7 @@ Learn everything you need to about the subject of this `Pragmatic Studio` projec
 ```
 [x] 1. Introduction
 [x] 2. Create Mix Project
-[ ] 3. High-Level Transformations
+[x] 3. High-Level Transformations
 [ ] 4. Parse Request Line
 [ ] 5. Route and Response
 [ ] 6. Function Clauses
