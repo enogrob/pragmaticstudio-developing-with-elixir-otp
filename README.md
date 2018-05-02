@@ -20,7 +20,7 @@ Learn everything you need to about the subject of this `Pragmatic Studio` projec
 [x] 3. High-Level Transformations
 [x] 4. Parse Request Line
 [x] 5. Route and Response
-[ ] 6. Function Clauses
+[x] 6. Function Clauses
 [ ] 7. Request Params and Status Codes
 [ ] 8. Rewrite Paths and Track 404s
 [ ] 9. Serve Static Files
