@@ -21,8 +21,8 @@ Learn everything you need to about the subject of this `Pragmatic Studio` projec
 [x] 4. Parse Request Line
 [x] 5. Route and Response
 [x] 6. Function Clauses
-[ ] 7. Request Params and Status Codes
-[ ] 8. Rewrite Paths and Track 404s
+[x] 7. Request Params and Status Codes
+[x] 8. Rewrite Paths and Track 404s
 [ ] 9. Serve Static Files
 [ ] 10. Module Attributes
 [ ] 11. Organizing Code
