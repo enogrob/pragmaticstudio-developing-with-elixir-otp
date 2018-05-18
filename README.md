@@ -24,7 +24,7 @@ Learn everything you need to about the subject of this `Pragmatic Studio` projec
 [x] 7. Request Params and Status Codes
 [x] 8. Rewrite Paths and Track 404s
 [x] 9. Serve Static Files
-[ ] 10. Module Attributes
+[x] 10. Module Attributes
 [ ] 11. Organizing Code
 [ ] 12. Modeling With Structs
 [ ] 13. Handle POST Requests
