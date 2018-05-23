@@ -26,7 +26,7 @@ Learn everything you need to about the subject of this `Pragmatic Studio` projec
 [x] 9. Serve Static Files
 [x] 10. Module Attributes
 [x] 11. Organizing Code
-[ ] 12. Modeling With Structs
+[x] 12. Modeling With Structs
 [ ] 13. Handle POST Requests
 [ ] 14. Recursion
 [ ] 15. Slicing and Dicing with Enum
