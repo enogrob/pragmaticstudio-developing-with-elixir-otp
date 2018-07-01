@@ -29,7 +29,7 @@ Learn everything you need to about the subject of this `Pragmatic Studio` projec
 [x] 12. Modeling With Structs
 [x] 13. Handle POST Requests
 [x] 14. Recursion
-[~] 15. Slicing and Dicing with Enum (Missing exercises)
+[~] 15. Slicing and Dicing with Enum (Missing Ruby)
 [ ] 16. Comprehensions
 [ ] 17. A Peek At Phoenix
 [ ] 18. Test Automation
