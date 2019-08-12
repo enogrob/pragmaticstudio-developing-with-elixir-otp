@@ -18,18 +18,18 @@ Learn everything you need to about the subject of this `Pragmatic Studio` projec
 [x] 1. Introduction
 [x] 2. Create Mix Project
 [x] 3. High-Level Transformations
-[x] 4. Parse Request Line
-[x] 5. Route and Response
-[x] 6. Function Clauses
-[x] 7. Request Params and Status Codes
-[x] 8. Rewrite Paths and Track 404s
-[x] 9. Serve Static Files
-[x] 10. Module Attributes
-[x] 11. Organizing Code
-[x] 12. Modeling With Structs
-[x] 13. Handle POST Requests
-[x] 14. Recursion
-[x] 15. Slicing and Dicing with Enum
+[ ] 4. Parse Request Line
+[ ] 5. Route and Response
+[ ] 6. Function Clauses
+[ ] 7. Request Params and Status Codes
+[ ] 8. Rewrite Paths and Track 404s
+[ ] 9. Serve Static Files
+[ ] 10. Module Attributes
+[ ] 11. Organizing Code
+[ ] 12. Modeling With Structs
+[ ] 13. Handle POST Requests
+[ ] 14. Recursion
+[ ] 15. Slicing and Dicing with Enum
 [ ] 16. Comprehensions
 [ ] 17. A Peek At Phoenix
 [ ] 18. Test Automation
