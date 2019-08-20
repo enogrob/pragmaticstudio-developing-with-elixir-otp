@@ -54,6 +54,38 @@ defmodule ServyTest do
 
       Bear 1
       """
+
+    request = """
+      GET /wildlife HTTP/1.1
+      Host: example.com
+      User-Agent: ExampleBrowser/1.0
+      Accept: */*
+
+      """
+    result = Subject.handle(request)
+    assert result == """
+      HTTP/1.1 200 OK
+      Content-Type: text/html
+      Content-Length: 20
+
+      Bears, Lions, Tigers
+      """
+
+    request = """
+      GET /wildones HTTP/1.1
+      Host: example.com
+      User-Agent: ExampleBrowser/1.0
+      Accept: */*
+
+      """
+    result = Subject.handle(request)
+    assert result == """
+      HTTP/1.1 404 Not Found
+      Content-Type: text/html
+      Content-Length: 18
+
+      No /wildones here!
+      """
   end
 
   test "Responds to parse properly" do
