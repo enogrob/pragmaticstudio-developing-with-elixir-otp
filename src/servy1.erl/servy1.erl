@@ -1,13 +1,13 @@
 -module(servy1).
-% -export([handle/1, parse/1]).
+% -export([handle/1]).
 -compile(export_all).
 
-  handle(Request) ->
-    format_response(
-      route(
-        parse(Request)
-      )
-    ).
+handle(Request) ->
+  format_response(
+    route(
+      parse(Request)
+    )
+  ).
 
 parse(Request) ->
   Lines = string:split(Request, "\n", all),
