@@ -7,7 +7,7 @@ handle(Request) ->
 parse(Request) ->
   Lines = re:split(Request, "\n"),
   FirstLine = lists:nth(2, Lines),
-  [Path, Method, _] = re:split(FirstLine, " "),
+  [Mehod, Path, _] = re:split(FirstLine, " "),
   #{method => Method, path => Path}.
 
 route(Request) ->
