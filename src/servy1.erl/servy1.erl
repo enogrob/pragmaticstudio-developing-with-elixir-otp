@@ -1,11 +1,15 @@
 -module(servy1).
--export([handle/1]).
+-export([handle/1, parse/1]).
 
 handle(Request) ->
   parse(Request).
 
 parse(Request) ->
-  route(Request).
+  Lines = re:split(Request, "\n"),
+  FirstLine = lists:nth(2, Lines),
+  [Path, Method, _] = re:split(FirstLine, " "),
+  #{method => Method, path => Path}.
+
 route(Request) ->
   format_response(Request).
 format_response(_Request) ->
