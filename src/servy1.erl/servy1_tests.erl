@@ -66,10 +66,27 @@ Accept: */*
 
 ",
 Result = "
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 20
+
+Bears, Lions, Tigers
+",
+?assertEqual(Result, servy1:handle(Request)).
+
+wildones_test() ->
+Request = "
+GET /wildones HTTP/1.1
+Host: example.com
+User-Agent: ExampleBrowser/1.0
+Accept: */*
+
+",
+Result = "
 HTTP/1.1 404 Not Found
 Content-Type: text/html
 Content-Length: 18
 
-No /wildlife here!
+No /wildones here!
 ",
 ?assertEqual(Result, servy1:handle(Request)).
